@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming Service</title>
+</head>
+<body>
+
+<script>
+    const siteTitle = "Hulu";
+    const loggedInUser = "Donald";
+    const subscriptionStatus = "Active";
+    const featuredContent = ["Stranger Things", "The Crown", "Narcos"];
+    const genres = ["Drama", "Thriller", "Documentary"];
+    const searchQuery = "Sci-Fi Movies";
+    const recentlyWatched = ["Black Mirror", "Mindhunter"];
+    const recommendedForYou = ["Breaking Bad", "Money Heist"];
+    const languagePreference = "English";
+    const watchlist = ["The Witcher", "Ozark"];
+    const viewingHistory = ["The Mandalorian", "Dark"];
+    const accountSettings = { username: "user123", email: "user@example.com" };
+    const paymentMethod = "Credit Card";
+    const parentalControls = true;
+    const notificationPreferences = { email: true, push: false };
+    const deviceList = ["Smart TV", "Laptop"];
+    const userFeedback = "How did we do ";
+    const darkModeEnabled = false;
+    const region = "United States";
+    const socialMediaLinks = {
+        twitter: "https://twitter.com/streamify",
+        instagram: "https://instagram.com/streamify"
+    };
+
+    document.write(`
+        <h1>${siteTitle}</h1>
+        <p>Welcome, ${loggedInUser}! Your subscription is ${subscriptionStatus}.</p>
+        <h2>Featured Content:</h2>
+        <ul>
+            ${featuredContent.map(content => `<li>${content}</li>`)}
+        </ul>
+        <p>Explore ${genres.length} genres, including ${genres}.</p>
+        <p>Your search query: ${searchQuery}</p>
+        <h2>Recently Watched:</h2>
+        <ul>
+            ${recentlyWatched.map(content => `<li>${content}</li>`)}
+        </ul>
+        <p>Recommended for you: ${recommendedForYou}.</p>
+        <p>Your preferred language is ${languagePreference}.</p>
+        <p>Your watchlist: ${watchlist}.</p>
+        <p>Viewing history: ${viewingHistory}.</p>
+        <p>Account Settings: ${(accountSettings)}</p>
+        <p>Payment Method: ${paymentMethod}</p>
+        <p>Parental Controls: ${parentalControls ? 'Enabled' : 'Disabled'}</p>
+        <p>Notification Preferences: ${(notificationPreferences)}</p>
+        <p>Devices: ${deviceList}.</p>
+        <p>User Feedback: ${userFeedback}</p>
+        <p>Dark Mode: ${darkModeEnabled ? 'Enabled' : 'Disabled'}</p>
+        <p>Region: ${region}</p>
+        <h2>Connect with us:</h2>
+        <ul>
+            <li><a href="${socialMediaLinks.twitter}" target="_blank">Twitter</a></li>
+            <li><a href="${socialMediaLinks.instagram}" target="_blank">Instagram</a></li>
+        </ul>
+    `);
+</script>
+
+</body>
+</html>
